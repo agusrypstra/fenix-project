@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class EjercicioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id_ejercicio;
     private String nombre;
     private String url;
     @OneToMany(mappedBy = "ejercicios",cascade = CascadeType.ALL)

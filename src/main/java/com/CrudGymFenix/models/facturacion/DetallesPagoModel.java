@@ -11,7 +11,7 @@ public class DetallesPagoModel {
     @Id
     @ManyToOne
     @JoinColumn(name = "fk_id_metodo_pago")
-    private MetodoPagoModel metodo;
+    private MetodoPagoModel metodo_pago;
 
     @Id
     @ManyToOne

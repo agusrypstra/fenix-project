@@ -9,7 +9,7 @@ import org.springframework.web.service.annotation.GetExchange;
 public class ModuloEjercicioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id_modulo_ejercicio;
     private String nombre;
     private int series;
     private int repeticiones;

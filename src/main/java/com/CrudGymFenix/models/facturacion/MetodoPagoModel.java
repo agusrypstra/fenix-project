@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class MetodoPagoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_metodo;
+    private int id_metodo_pago;
     private String nombre;
     private String descripcion;
     @OneToMany(mappedBy = "fk_id_metodo_pago", cascade = CascadeType.ALL)

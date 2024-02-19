@@ -7,6 +7,6 @@ import jakarta.persistence.*;
 public class GruposMuscularesModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id_grupo_muscular;
     private String nombre;
 }

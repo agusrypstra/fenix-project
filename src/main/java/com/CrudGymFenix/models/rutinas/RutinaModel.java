@@ -10,7 +10,7 @@ import java.util.Date;
 public class RutinaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id_rutina;
     private Date fecha_inicio;
     private Date fecha_fin;
     @ManyToOne
