@@ -1,4 +1,4 @@
-package com.CrudGymFenix.models.productos;
+package com.CrudGymFenix.models.facturacion.productos;
 
 import jakarta.persistence.*;
 

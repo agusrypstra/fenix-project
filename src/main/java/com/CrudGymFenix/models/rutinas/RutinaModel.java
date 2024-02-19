@@ -1,5 +1,6 @@
-package com.CrudGymFenix.models;
+package com.CrudGymFenix.models.rutinas;
 
+import com.CrudGymFenix.models.UsuarioModel;
 import jakarta.persistence.*;
 
 import java.util.Date;

@@ -1,6 +1,7 @@
 package com.CrudGymFenix.models;
 
 import com.CrudGymFenix.models.facturacion.FacturaModel;
+import com.CrudGymFenix.models.rutinas.RutinaModel;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

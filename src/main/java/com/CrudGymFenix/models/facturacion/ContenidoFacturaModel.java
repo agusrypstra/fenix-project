@@ -1,6 +1,6 @@
 package com.CrudGymFenix.models.facturacion;
 
-import com.CrudGymFenix.models.productos.ProductoModel;
+import com.CrudGymFenix.models.facturacion.productos.ProductoModel;
 import jakarta.persistence.*;
 
 @Entity
