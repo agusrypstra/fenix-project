@@ -7,7 +7,7 @@ import java.util.Optional;
 @Service
 public interface UsuarioService {
     ArrayList<UsuarioModel> getAllUsers();
-    Optional<UsuarioModel> getUserById(long id);
+    Optional<UsuarioModel> getUserById(Long id);
     UsuarioModel saveUser(UsuarioModel u);
-    boolean deleteUserById(long id);
+    boolean deleteUserById(Long id);
 }

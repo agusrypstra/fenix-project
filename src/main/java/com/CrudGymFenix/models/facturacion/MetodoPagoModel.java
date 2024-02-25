@@ -13,7 +13,7 @@ public class MetodoPagoModel {
     private String nombre;
     private String descripcion;
     @OneToMany(mappedBy = "fk_id_metodo_pago", cascade = CascadeType.ALL)
-    private ArrayList<DetallesPagoModel> detalles;
+    private ArrayList<DetallesPagoModel> detalles_pago;
 
 
 }

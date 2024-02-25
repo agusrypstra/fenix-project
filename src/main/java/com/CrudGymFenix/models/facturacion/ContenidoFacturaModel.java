@@ -15,6 +15,6 @@ public class ContenidoFacturaModel {
     @ManyToOne
     @JoinColumn(name = "fk_id_producto")
     private ProductoModel producto;
-    private int precio;
-    private int subtotal;
+    private int cantidad;
+    private int precio_unitario;
 }

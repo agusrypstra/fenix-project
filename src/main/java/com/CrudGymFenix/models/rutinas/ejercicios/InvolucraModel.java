@@ -8,10 +8,10 @@ import jakarta.persistence.*;
 public class InvolucraModel {
     @Id
     @ManyToOne
-    @JoinColumn(name = "fk_id_grupo_muscular")
-    private GruposMuscularesModel grupoMuscular;
+    @JoinColumn(name = "fk_id_ejercicio")
+    private EjercicioModel fk_id_ejercicio;
     @Id
     @ManyToOne
-    @JoinColumn(name = "fk_id_ejercicio")
-    private EjercicioModel ejercicio;
+    @JoinColumn(name = "fk_id_grupo_muscular")
+    private GruposMuscularesModel fk_id_grupo_muscular;
 }

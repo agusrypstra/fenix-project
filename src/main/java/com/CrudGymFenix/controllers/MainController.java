@@ -10,12 +10,8 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping("api")
 public class MainController {
-    private final UsuarioService usuarioService;
     @Autowired
-    public MainController(UsuarioService usuarioService) {
-        this.usuarioService = usuarioService;
-    }
-
+    UsuarioService usuarioService;
     @GetMapping("/saludar")
     public String saludar(){
         return "Hola loco";

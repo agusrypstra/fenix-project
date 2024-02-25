@@ -12,6 +12,4 @@ public class EjercicioModel {
     private int id_ejercicio;
     private String nombre;
     private String url;
-    @OneToMany(mappedBy = "ejercicios",cascade = CascadeType.ALL)
-    private ArrayList<ModuloEjercicioModel> moduloEjercicios;
 }

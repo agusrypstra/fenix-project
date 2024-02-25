@@ -8,10 +8,10 @@ import jakarta.persistence.*;
 public class RutinaTieneModel {
     @Id
     @ManyToOne
-    @JoinColumn(name = "fk_id_dia")
-    private DiaModel dia;
-    @Id
-    @ManyToOne
     @JoinColumn(name = "fk_id_rutina")
     private RutinaModel rutina;
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "fk_id_dia")
+    private DiaModel dia;
 }

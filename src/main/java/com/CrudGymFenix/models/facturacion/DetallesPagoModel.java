@@ -9,14 +9,12 @@ import java.util.Date;
 @IdClass(IDDetallesPago.class)
 public class DetallesPagoModel {
     @Id
-    @ManyToOne
-    @JoinColumn(name = "fk_id_metodo_pago")
-    private MetodoPagoModel metodo_pago;
-
-    @Id
-    @ManyToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_id_factura")
-    private FacturaModel factura;
+    private FacturaModel fk_id_factura;
+    @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinColumn(name = "fk_id_metodo_pago")
+    private MetodoPagoModel fk_id_metodo_pago;
     private int monto_pagado;
     private Date fecha_pago;
 }

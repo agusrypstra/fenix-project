@@ -13,6 +13,6 @@ public class FacturaModel {
     private int id_factura;
     @ManyToOne
     @JoinColumn(name = "fk_id_usuario")
-    private UsuarioModel usuarioModel;
+    private UsuarioModel fk_id_usuario;
     private Date fecha;
 }
